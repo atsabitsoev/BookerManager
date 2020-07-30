@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0424D307BA00B83252 /* AppDelegate.swift */; };
 		AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */; };
-		AC3C7E0924D307BA00B83252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0824D307BA00B83252 /* ViewController.swift */; };
-		AC3C7E0C24D307BA00B83252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0A24D307BA00B83252 /* Main.storyboard */; };
 		AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0D24D307BA00B83252 /* Assets.xcassets */; };
 		AC3C7E1124D307BA00B83252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0F24D307BA00B83252 /* LaunchScreen.storyboard */; };
+		AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E1B24D3084E00B83252 /* DefaultOrdersController.swift */; };
+		AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E1D24D3085A00B83252 /* DefaultOrdersView.swift */; };
+		AC3C7E2024D3086400B83252 /* OrdersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E1F24D3086400B83252 /* OrdersProtocols.swift */; };
+		AC3C7E2324D3098000B83252 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2224D3098000B83252 /* Colors.swift */; };
+		AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2524D30AF000B83252 /* BMNavigationController.swift */; };
+		AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2724D30DFE00B83252 /* BMTabBarController.swift */; };
+		AC3C7E2B24D3107D00B83252 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2A24D3107D00B83252 /* OrderCell.swift */; };
+		AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2C24D3128900B83252 /* Fonts.swift */; };
+		AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2E24D3165B00B83252 /* OrderItem.swift */; };
+		AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3124D3170D00B83252 /* OrderState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC3C7E0124D307BA00B83252 /* BookerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C7E0424D307BA00B83252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC3C7E0824D307BA00B83252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC3C7E0B24D307BA00B83252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC3C7E0D24D307BA00B83252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3C7E1024D307BA00B83252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3C7E1224D307BA00B83252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC3C7E1B24D3084E00B83252 /* DefaultOrdersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOrdersController.swift; sourceTree = "<group>"; };
+		AC3C7E1D24D3085A00B83252 /* DefaultOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultOrdersView.swift; sourceTree = "<group>"; };
+		AC3C7E1F24D3086400B83252 /* OrdersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersProtocols.swift; sourceTree = "<group>"; };
+		AC3C7E2224D3098000B83252 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AC3C7E2524D30AF000B83252 /* BMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMNavigationController.swift; sourceTree = "<group>"; };
+		AC3C7E2724D30DFE00B83252 /* BMTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMTabBarController.swift; sourceTree = "<group>"; };
+		AC3C7E2A24D3107D00B83252 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		AC3C7E2C24D3128900B83252 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		AC3C7E2E24D3165B00B83252 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		AC3C7E3124D3170D00B83252 /* OrderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		AC3C7E0324D307BA00B83252 /* BookerManager */ = {
 			isa = PBXGroup;
 			children = (
+				AC3C7E2124D3097500B83252 /* DesignSystem */,
+				AC3C7E1924D3080800B83252 /* Modules */,
+				AC3C7E1824D307F700B83252 /* SupportingFiles */,
+			);
+			path = BookerManager;
+			sourceTree = "<group>";
+		};
+		AC3C7E1824D307F700B83252 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				AC3C7E0424D307BA00B83252 /* AppDelegate.swift */,
 				AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */,
-				AC3C7E0824D307BA00B83252 /* ViewController.swift */,
-				AC3C7E0A24D307BA00B83252 /* Main.storyboard */,
 				AC3C7E0D24D307BA00B83252 /* Assets.xcassets */,
 				AC3C7E0F24D307BA00B83252 /* LaunchScreen.storyboard */,
 				AC3C7E1224D307BA00B83252 /* Info.plist */,
 			);
-			path = BookerManager;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AC3C7E1924D3080800B83252 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E1A24D3084000B83252 /* Orders */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AC3C7E1A24D3084000B83252 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E1B24D3084E00B83252 /* DefaultOrdersController.swift */,
+				AC3C7E1D24D3085A00B83252 /* DefaultOrdersView.swift */,
+				AC3C7E1F24D3086400B83252 /* OrdersProtocols.swift */,
+				AC3C7E3024D316FF00B83252 /* Entities */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		AC3C7E2124D3097500B83252 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E2424D30ADB00B83252 /* Navigation */,
+				AC3C7E2924D3106400B83252 /* Cells */,
+				AC3C7E2224D3098000B83252 /* Colors.swift */,
+				AC3C7E2C24D3128900B83252 /* Fonts.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		AC3C7E2424D30ADB00B83252 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E2524D30AF000B83252 /* BMNavigationController.swift */,
+				AC3C7E2724D30DFE00B83252 /* BMTabBarController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AC3C7E2924D3106400B83252 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E2A24D3107D00B83252 /* OrderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AC3C7E3024D316FF00B83252 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AC3C7E2E24D3165B00B83252 /* OrderItem.swift */,
+				AC3C7E3124D3170D00B83252 /* OrderState.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +207,6 @@
 			files = (
 				AC3C7E1124D307BA00B83252 /* LaunchScreen.storyboard in Resources */,
 				AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */,
-				AC3C7E0C24D307BA00B83252 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +217,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC3C7E0924D307BA00B83252 /* ViewController.swift in Sources */,
 				AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */,
+				AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */,
+				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
+				AC3C7E2324D3098000B83252 /* Colors.swift in Sources */,
+				AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */,
+				AC3C7E2B24D3107D00B83252 /* OrderCell.swift in Sources */,
+				AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */,
+				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,
+				AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */,
+				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
+				AC3C7E2024D3086400B83252 /* OrdersProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC3C7E0A24D307BA00B83252 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC3C7E0B24D307BA00B83252 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC3C7E0F24D307BA00B83252 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,7 +366,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
-				INFOPLIST_FILE = BookerManager/Info.plist;
+				INFOPLIST_FILE = BookerManager/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.BookerManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +385,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
-				INFOPLIST_FILE = BookerManager/Info.plist;
+				INFOPLIST_FILE = BookerManager/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.BookerManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
