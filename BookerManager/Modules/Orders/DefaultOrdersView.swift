@@ -54,6 +54,8 @@ final class DefaultOrdersView: UIView, OrdersView {
     }()
     private let tableView: UITableView = {
         let table = UITableView()
+        table.separatorStyle = .none
+        table.backgroundColor = UIColor.Background.primary
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
@@ -80,15 +82,49 @@ final class DefaultOrdersView: UIView, OrdersView {
         addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.separatorStyle = .none
         tableView.tableHeaderView = tableHeaderView
         tableView.register(OrderCell.self, forCellReuseIdentifier: OrderCell.identifier)
         setNeedsUpdateConstraints()
         allOrderItems = [
-            OrderItem(date: "18:00, сегодня", personsCount: 4, name: "Андрей Петров", state: .waiting),
-            OrderItem(date: "19:20, сегодня", personsCount: 2, name: "Сизый", state: .ready),
-            OrderItem(date: "20:30, сегодня", personsCount: 3, name: "Александр Якунин", state: .waiting)
+            OrderItem(date: "18:00, сегодня", personsCount: 4, name: "Андрей Петров", state: .waiting, orderId: "1"),
+            OrderItem(date: "19:20, сегодня", personsCount: 2, name: "Сизый", state: .ready, orderId: "2"),
+            OrderItem(date: "20:30, сегодня", personsCount: 3, name: "Александр Якунин", state: .waiting, orderId: "3")
         ]
+    }
+    
+    func alertOrderActions() {
+        guard let row = tableView.indexPathForSelectedRow?.row else {
+                print("Не найден заказ для которого нужно выполнить действие")
+                return
+        }
+        let alert = UIAlertController(title: "Выберите действие", message: nil, preferredStyle: .actionSheet)
+        
+        if state == .waitingOrders {
+            let confirmAction = UIAlertAction(title: "Подтвердить бронь", style: .default) { _ in
+                self.confirmAction(row: row)
+                self.tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+            }
+            confirmAction.setValue(UIColor.Alert.confirm, forKey: "titleTextColor")
+            alert.addAction(confirmAction)
+        }
+        
+        let rejectAction = UIAlertAction(title: "Отказать...", style: .default, handler: { _ in
+            self.rejectAction(row: row)
+            self.tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+        })
+        rejectAction.setValue(UIColor.Alert.reject, forKey: "titleTextColor")
+        let callAction = UIAlertAction(title: "Позвонить...", style: .default, handler: { _ in
+            self.callAction(row: row)
+            self.tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+        })
+        callAction.setValue(UIColor.Alert.simple, forKey: "titleTextColor")
+        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: { _ in
+            self.tableView.deselectRow(at: IndexPath(row: row, section: 0), animated: true)
+        })
+        alert.addAction(rejectAction)
+        alert.addAction(callAction)
+        alert.addAction(cancelAction)
+        controller.present(alert, animated: true, completion: nil)
     }
     
     private func setupTableViewConstraints() {
@@ -104,6 +140,21 @@ final class DefaultOrdersView: UIView, OrdersView {
         state = segmentedControl.selectedSegmentIndex == 0 ? .waitingOrders : .readyOrders
     }
     
+    private func confirmAction(row: Int) {
+        let orderId = currentOrderItems[row].orderId
+        controller.confirmAction(forOrderId: orderId)
+    }
+    
+    private func rejectAction(row: Int) {
+        let orderId = currentOrderItems[row].orderId
+        controller.rejectAction(forOrderId: orderId)
+    }
+    
+    private func callAction(row: Int) {
+        let orderId = currentOrderItems[row].orderId
+        controller.callAction(forOrderId: orderId)
+    }
+    
 }
 
 extension DefaultOrdersView: UITableViewDelegate, UITableViewDataSource {
@@ -117,5 +168,9 @@ extension DefaultOrdersView: UITableViewDelegate, UITableViewDataSource {
         let currentItem = currentOrderItems[indexPath.row]
         cell.configureCell(date: currentItem.date, personsCount: currentItem.personsCount, name: currentItem.name)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        alertOrderActions()
     }
 }

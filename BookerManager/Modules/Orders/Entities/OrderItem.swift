@@ -13,4 +13,5 @@ struct OrderItem {
     var personsCount: Int
     var name: String
     var state: OrderState
+    var orderId: String
 }

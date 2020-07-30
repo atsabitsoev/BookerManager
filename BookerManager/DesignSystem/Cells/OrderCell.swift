@@ -76,6 +76,7 @@ final class OrderCell: UITableViewCell {
     }
     
     private func configureView() {
+        contentView.backgroundColor = UIColor.Background.primary
         contentView.addSubview(mainView)
         mainView.addSubview(verticalStack)
         verticalStack.addArrangedSubview(dateLabel)
@@ -117,6 +118,29 @@ final class OrderCell: UITableViewCell {
             additionalString = "персон"
         }
         return "\(count) \(additionalString)"
+    }
+    
+    private func animateSelection(_ selected: Bool) {
+        let transformScale: CGFloat = selected ? 0.9 : 1
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.1) {
+                self.mainView.transform = CGAffineTransform(scaleX: transformScale, y: transformScale)
+            }
+        }
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        animateSelection(selected)
+    }
+    
+    override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
+        if highlighted {
+            animateSelection(true)
+        } else if !isSelected {
+            animateSelection(false)
+        }
     }
     
 }

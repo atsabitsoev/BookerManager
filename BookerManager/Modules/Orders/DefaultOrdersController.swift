@@ -23,4 +23,14 @@ final class DefaultOrdersController: UIViewController, OrdersControlling {
         super.viewDidLoad()
         title = "Брони"
     }
+    
+    func confirmAction(forOrderId orderId: String) {
+        print("Подтвердить заказ с id: \(orderId)")
+    }
+    func rejectAction(forOrderId orderId: String) {
+        print("Отменить заказ с id: \(orderId)")
+    }
+    func callAction(forOrderId orderId: String) {
+        print("Позвонить по заказу с id: \(orderId)")
+    }
 }

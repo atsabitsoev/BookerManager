@@ -27,4 +27,10 @@ extension UIColor {
     struct Cell {
         static let title = UIColor(named: "cellTitle")!
     }
+    
+    struct Alert {
+        static let confirm = UIColor(named: "alertConfirm")!
+        static let reject = UIColor(named: "alertReject")!
+        static let simple = UIColor(named: "alertSimple")!
+    }
 }
