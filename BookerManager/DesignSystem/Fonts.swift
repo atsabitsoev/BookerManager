@@ -14,4 +14,14 @@ extension UIFont {
         static let bigTitle = UIFont.systemFont(ofSize: 24, weight: .bold)
         static let title = UIFont.systemFont(ofSize: 20)
     }
+    
+    struct Alert {
+        static let title = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        static let textField = UIFont.systemFont(ofSize: 14)
+    }
+    
+    struct Button {
+        static let main = UIFont.systemFont(ofSize: 14)
+        static let cancel = UIFont.systemFont(ofSize: 14)
+    }
 }

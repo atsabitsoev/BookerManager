@@ -21,6 +21,8 @@
 		AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2C24D3128900B83252 /* Fonts.swift */; };
 		AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E2E24D3165B00B83252 /* OrderItem.swift */; };
 		AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E3124D3170D00B83252 /* OrderState.swift */; };
+		ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */; };
+		ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE4E1824D37008007369A0 /* BMButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		AC3C7E2C24D3128900B83252 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		AC3C7E2E24D3165B00B83252 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
 		AC3C7E3124D3170D00B83252 /* OrderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderState.swift; sourceTree = "<group>"; };
+		ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlertController.swift; sourceTree = "<group>"; };
+		ACCE4E1824D37008007369A0 /* BMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				AC3C7E2424D30ADB00B83252 /* Navigation */,
+				ACCE4E1724D36FF5007369A0 /* Views */,
 				AC3C7E2924D3106400B83252 /* Cells */,
+				ACCE4E1424D36D32007369A0 /* Alerts */,
 				AC3C7E2224D3098000B83252 /* Colors.swift */,
 				AC3C7E2C24D3128900B83252 /* Fonts.swift */,
 			);
@@ -145,6 +151,22 @@
 				AC3C7E3124D3170D00B83252 /* OrderState.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		ACCE4E1424D36D32007369A0 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		ACCE4E1724D36FF5007369A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCE4E1824D37008007369A0 /* BMButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +241,11 @@
 			files = (
 				AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */,
 				AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */,
+				ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */,
 				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
 				AC3C7E2324D3098000B83252 /* Colors.swift in Sources */,
 				AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */,
+				ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */,
 				AC3C7E2B24D3107D00B83252 /* OrderCell.swift in Sources */,
 				AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */,
 				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,

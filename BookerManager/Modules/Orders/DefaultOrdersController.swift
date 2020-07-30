@@ -29,6 +29,16 @@ final class DefaultOrdersController: UIViewController, OrdersControlling {
     }
     func rejectAction(forOrderId orderId: String) {
         print("Отменить заказ с id: \(orderId)")
+        let alert = TypeAlertController(
+            alertTitle: "Причина отказа",
+            buttonTitle: "Отправить отказ",
+            buttonState: .destructive,
+            placeholder: "Сообщение...") { (newText) in
+                print("Отправить отказ с текстом: \(newText ?? "Текст отсутствует")")
+        }
+        alert.modalPresentationStyle = .overCurrentContext
+        alert.modalTransitionStyle = .crossDissolve
+        self.tabBarController?.present(alert, animated: true, completion: nil)
     }
     func callAction(forOrderId orderId: String) {
         print("Позвонить по заказу с id: \(orderId)")

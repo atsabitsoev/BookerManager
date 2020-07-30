@@ -14,7 +14,7 @@ final class BMTabBarController: UITabBarController {
         super.init(nibName: nil, bundle: nil)
         tabBar.isTranslucent = false
         tabBar.barTintColor = UIColor.Background.secondary
-        tabBar.tintColor = UIColor.Button.tapOnMe
+        tabBar.tintColor = UIColor.Button.standard
         let ordersVC = BMNavigationController(rootViewController: DefaultOrdersController())
         ordersVC.tabBarItem = UITabBarItem(title: "Брони", image: UIImage(named: "orderTabBarItem"), tag: 0)
         viewControllers = [ordersVC]

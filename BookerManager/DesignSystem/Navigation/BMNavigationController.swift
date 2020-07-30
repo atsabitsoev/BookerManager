@@ -15,7 +15,7 @@ final class BMNavigationController: UINavigationController {
         navigationBar.isTranslucent = false
         navigationBar.barTintColor = UIColor.Background.secondary
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.Background.title]
-        navigationBar.tintColor = UIColor.Button.tapOnMe
+        navigationBar.tintColor = UIColor.Button.standard
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle { return .default }

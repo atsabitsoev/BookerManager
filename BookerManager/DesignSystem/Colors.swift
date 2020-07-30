@@ -17,7 +17,10 @@ extension UIColor {
     }
     
     struct Button {
-        static let tapOnMe = UIColor(named: "buttonTapOnMe")!
+        static let standard = UIColor(named: "buttonTapOnMe")!
+        static let destructive = UIColor(named: "buttonDestructive")!
+        static let title = UIColor(named: "buttonTitle")!
+        static let cancel = UIColor(named: "buttonCancel")!
     }
     
     struct Shadow {
@@ -32,5 +35,6 @@ extension UIColor {
         static let confirm = UIColor(named: "alertConfirm")!
         static let reject = UIColor(named: "alertReject")!
         static let simple = UIColor(named: "alertSimple")!
+        static let title = UIColor(named: "alertTitle")!
     }
 }
