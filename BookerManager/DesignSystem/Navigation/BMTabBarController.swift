@@ -17,7 +17,9 @@ final class BMTabBarController: UITabBarController {
         tabBar.tintColor = UIColor.Button.standard
         let ordersVC = BMNavigationController(rootViewController: DefaultOrdersController())
         ordersVC.tabBarItem = UITabBarItem(title: "Брони", image: UIImage(named: "orderTabBarItem"), tag: 0)
-        viewControllers = [ordersVC]
+        let promotionsVC = BMNavigationController(rootViewController: DefaultPromotionsController())
+        promotionsVC.tabBarItem = UITabBarItem(title: "Акции", image: UIImage(named: "promotionsTabBarItem"), tag: 1)
+        viewControllers = [ordersVC, promotionsVC]
     }
     
     required init?(coder: NSCoder) {

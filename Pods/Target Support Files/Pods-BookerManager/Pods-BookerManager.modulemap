@@ -1,0 +1,6 @@
+framework module Pods_BookerManager {
+  umbrella header "Pods-BookerManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

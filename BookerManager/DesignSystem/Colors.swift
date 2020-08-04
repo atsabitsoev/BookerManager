@@ -28,6 +28,9 @@ extension UIColor {
     }
     
     struct Cell {
+        static let background = UIColor.Background.primary
+        static let mainView = UIColor.white
+        static let description = UIColor(named: "cellDescription")!
         static let title = UIColor(named: "cellTitle")!
     }
     
