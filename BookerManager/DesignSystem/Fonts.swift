@@ -25,4 +25,13 @@ extension UIFont {
         static let main = UIFont.systemFont(ofSize: 14)
         static let cancel = UIFont.systemFont(ofSize: 14)
     }
+    
+    struct Label {
+        static let forTextField = UIFont.systemFont(ofSize: 14)
+        static let help = UIFont.systemFont(ofSize: 16)
+    }
+    
+    struct TextField {
+        static let autorization = UIFont.systemFont(ofSize: 18, weight: .bold)
+    }
 }

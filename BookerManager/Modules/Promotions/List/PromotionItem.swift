@@ -10,6 +10,7 @@ import Foundation
 
 
 struct PromotionItem {
+    var id: String
     var imageUrl: String?
     var title: String
     var description: String

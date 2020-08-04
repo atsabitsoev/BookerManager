@@ -9,9 +9,10 @@
 import UIKit
 
 
-protocol PromotionsViewing: UIView {
+protocol PromotionsListViewing: UIView {
     func configureView()
 }
 
-protocol PromotionsControlling: UIViewController {
+protocol PromotionsListControlling: UIViewController {
+    func showDeleteAlert(forPromotionId: String)
 }
