@@ -1,18 +1,31 @@
 PODS:
+  - IQKeyboardManagerSwift (6.5.5)
+  - PhoneNumberKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 3.2.0)
+    - PhoneNumberKit/UIKit (= 3.2.0)
+  - PhoneNumberKit/PhoneNumberKitCore (3.2.0)
+  - PhoneNumberKit/UIKit (3.2.0):
+    - PhoneNumberKit/PhoneNumberKitCore
   - SDWebImage (5.8.4):
     - SDWebImage/Core (= 5.8.4)
   - SDWebImage/Core (5.8.4)
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - PhoneNumberKit (~> 3.1)
   - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   trunk:
+    - IQKeyboardManagerSwift
+    - PhoneNumberKit
     - SDWebImage
 
 SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  PhoneNumberKit: df411d46177d1492da84e10b6c093846dd861452
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: 0ddca17733660c7aa8b5553397e8d434c8e06521
+PODFILE CHECKSUM: 7c01b4266bb815318b25ce2d124a86787cdfaecd
 
 COCOAPODS: 1.9.1

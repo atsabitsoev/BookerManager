@@ -7,5 +7,6 @@ target 'BookerManager' do
 
   # Pods for BookerManager
   pod 'SDWebImage', '~> 5.0'
-
+  pod 'PhoneNumberKit', '~> 3.1'
+  pod 'IQKeyboardManagerSwift'
 end
