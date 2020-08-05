@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		191B53A2F7E4720B67D1AEFB /* Pods_BookerManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9A81B7107AC51FB8A4BA50 /* Pods_BookerManager.framework */; };
+		AC08246024DA4684006F0072 /* DefaultSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08245F24DA4684006F0072 /* DefaultSettingsController.swift */; };
+		AC08246224DA468C006F0072 /* DefaultSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246124DA468C006F0072 /* DefaultSettingsView.swift */; };
+		AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246324DA4694006F0072 /* SettingsProtocols.swift */; };
+		AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246524DA4CE0006F0072 /* SwitchView.swift */; };
+		AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */; };
 		AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0424D307BA00B83252 /* AppDelegate.swift */; };
 		AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */; };
 		AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0D24D307BA00B83252 /* Assets.xcassets */; };
@@ -44,6 +49,11 @@
 /* Begin PBXFileReference section */
 		1E9A81B7107AC51FB8A4BA50 /* Pods_BookerManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookerManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F49EF67C4AD9791400A875 /* Pods-BookerManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookerManager.debug.xcconfig"; path = "Target Support Files/Pods-BookerManager/Pods-BookerManager.debug.xcconfig"; sourceTree = "<group>"; };
+		AC08245F24DA4684006F0072 /* DefaultSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingsController.swift; sourceTree = "<group>"; };
+		AC08246124DA468C006F0072 /* DefaultSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSettingsView.swift; sourceTree = "<group>"; };
+		AC08246324DA4694006F0072 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		AC08246524DA4CE0006F0072 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
+		AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronCellView.swift; sourceTree = "<group>"; };
 		AC3C7E0124D307BA00B83252 /* BookerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C7E0424D307BA00B83252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AC08245E24DA4665006F0072 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AC08245F24DA4684006F0072 /* DefaultSettingsController.swift */,
+				AC08246124DA468C006F0072 /* DefaultSettingsView.swift */,
+				AC08246324DA4694006F0072 /* SettingsProtocols.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		AC3C7DF824D307BA00B83252 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +174,7 @@
 			children = (
 				AC3C7E1A24D3084000B83252 /* Orders */,
 				ACC2CFA724D8F0D400B218FD /* Promotions */,
+				AC08245E24DA4665006F0072 /* Settings */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -263,6 +284,8 @@
 			isa = PBXGroup;
 			children = (
 				ACCE4E1824D37008007369A0 /* BMButton.swift */,
+				AC08246524DA4CE0006F0072 /* SwitchView.swift */,
+				AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */,
 				AC9BC19A24D91D6B0028E68C /* PhoneTitlableTextField.swift */,
 				AC9BC19B24D91D6B0028E68C /* ShadowTitlableTextField.swift */,
 				AC9BC19C24D91D6B0028E68C /* TitlableTextField.swift */,
@@ -400,6 +423,7 @@
 				ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */,
 				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
 				AC3C7E2324D3098000B83252 /* Colors.swift in Sources */,
+				AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */,
 				AC9BC19324D919560028E68C /* PromotionProtocols.swift in Sources */,
 				AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */,
 				ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */,
@@ -410,6 +434,7 @@
 				ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */,
 				ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */,
 				ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */,
+				AC08246024DA4684006F0072 /* DefaultSettingsController.swift in Sources */,
 				AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */,
 				AC9BC19524D919820028E68C /* DefaultNewPromotionView.swift in Sources */,
 				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,
@@ -419,7 +444,10 @@
 				AC9BC19924D91B4D0028E68C /* Promotion.swift in Sources */,
 				ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */,
 				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
+				AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
+				AC08246224DA468C006F0072 /* DefaultSettingsView.swift in Sources */,
+				AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */,
 				AC3C7E2024D3086400B83252 /* OrdersProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

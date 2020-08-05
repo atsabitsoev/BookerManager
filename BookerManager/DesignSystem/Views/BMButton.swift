@@ -13,26 +13,26 @@ final class BMButton: UIButton {
     enum State {
         case standard
         case destructive
+        case quit
     }
-    
-    private var buttonTitle: String
-    private var buttonState: State
     
     init(
         buttonState: State,
         title: String) {
-        self.buttonState = buttonState
-        self.buttonTitle = title
         super.init(frame: .zero)
         layer.cornerRadius = 16
-        setTitle(buttonTitle, for: .normal)
+        setTitle(title, for: .normal)
         switch buttonState {
         case .standard:
             backgroundColor = UIColor.Button.standard
+            setTitleColor(UIColor.Button.title, for: .normal)
         case .destructive:
             backgroundColor = UIColor.Button.destructive
+            setTitleColor(UIColor.Button.title, for: .normal)
+        case .quit:
+            backgroundColor = UIColor.Background.secondary
+            setTitleColor(UIColor.Button.destructive, for: .normal)
         }
-        setTitleColor(UIColor.Button.title, for: .normal)
         titleLabel?.font = UIFont.Button.main
     }
     

@@ -13,7 +13,8 @@ final class BMNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.isTranslucent = false
-        navigationBar.barTintColor = UIColor.Background.secondary
+        navigationBar.barTintColor = UIColor.Background.tabBar
+        navigationBar.shadowImage = UIImage()
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.Background.title]
         navigationBar.tintColor = UIColor.Button.standard
     }
