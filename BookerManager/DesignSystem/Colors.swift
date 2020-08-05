@@ -14,6 +14,7 @@ extension UIColor {
         static let primary = UIColor(named: "backgroundPrimary")!
         static let secondary = UIColor(named: "backgroundSecondary")!
         static let title = UIColor(named: "backgroundTitle")!
+        static let tabBar = UIColor.white
     }
     
     struct Button {
