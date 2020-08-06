@@ -40,6 +40,14 @@
 		ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */; };
 		ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFAA24D8F0D400B218FD /* PromotionsListProtocols.swift */; };
 		ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFAB24D8F0D400B218FD /* PromotionItem.swift */; };
+		ACCB515B24DC8A080007A400 /* EnterNameProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */; };
+		ACCB515C24DC8A080007A400 /* DefaultEnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */; };
+		ACCB515D24DC8A080007A400 /* DefaultEnterNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */; };
+		ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515824DC8A080007A400 /* DefaultEnterPhoneController.swift */; };
+		ACCB515F24DC8A080007A400 /* EnterPhoneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515924DC8A080007A400 /* EnterPhoneProtocols.swift */; };
+		ACCB516024DC8A080007A400 /* DefaultEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515A24DC8A080007A400 /* DefaultEnterPhoneView.swift */; };
+		ACCB516324DC8A5F0007A400 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB516224DC8A5F0007A400 /* AlertManager.swift */; };
+		ACCB516524DC8AA10007A400 /* SimpleAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB516424DC8AA10007A400 /* SimpleAlertController.swift */; };
 		ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */; };
 		ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE4E1824D37008007369A0 /* BMButton.swift */; };
 		ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAE7FA24D9295F007F2535 /* CreatingPromotion.swift */; };
@@ -83,6 +91,14 @@
 		ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListController.swift; sourceTree = "<group>"; };
 		ACC2CFAA24D8F0D400B218FD /* PromotionsListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsListProtocols.swift; sourceTree = "<group>"; };
 		ACC2CFAB24D8F0D400B218FD /* PromotionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionItem.swift; sourceTree = "<group>"; };
+		ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameProtocols.swift; sourceTree = "<group>"; };
+		ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterNameView.swift; sourceTree = "<group>"; };
+		ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterNameController.swift; sourceTree = "<group>"; };
+		ACCB515824DC8A080007A400 /* DefaultEnterPhoneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterPhoneController.swift; sourceTree = "<group>"; };
+		ACCB515924DC8A080007A400 /* EnterPhoneProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPhoneProtocols.swift; sourceTree = "<group>"; };
+		ACCB515A24DC8A080007A400 /* DefaultEnterPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterPhoneView.swift; sourceTree = "<group>"; };
+		ACCB516224DC8A5F0007A400 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		ACCB516424DC8AA10007A400 /* SimpleAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlertController.swift; sourceTree = "<group>"; };
 		ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAlertController.swift; sourceTree = "<group>"; };
 		ACCE4E1824D37008007369A0 /* BMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		ACDAE7FA24D9295F007F2535 /* CreatingPromotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingPromotion.swift; sourceTree = "<group>"; };
@@ -150,6 +166,7 @@
 		AC3C7E0324D307BA00B83252 /* BookerManager */ = {
 			isa = PBXGroup;
 			children = (
+				ACCB516124DC8A4D0007A400 /* UIServices */,
 				AC3C7E2124D3097500B83252 /* DesignSystem */,
 				AC3C7E1924D3080800B83252 /* Modules */,
 				AC3C7E1824D307F700B83252 /* SupportingFiles */,
@@ -172,6 +189,7 @@
 		AC3C7E1924D3080800B83252 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				ACCB515224DC89E60007A400 /* Authorization */,
 				AC3C7E1A24D3084000B83252 /* Orders */,
 				ACC2CFA724D8F0D400B218FD /* Promotions */,
 				AC08245E24DA4665006F0072 /* Settings */,
@@ -272,9 +290,47 @@
 			path = Promotions;
 			sourceTree = "<group>";
 		};
+		ACCB515224DC89E60007A400 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB515324DC8A080007A400 /* EnterName */,
+				ACCB515724DC8A080007A400 /* EnterPhone */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		ACCB515324DC8A080007A400 /* EnterName */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */,
+				ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */,
+				ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */,
+			);
+			path = EnterName;
+			sourceTree = "<group>";
+		};
+		ACCB515724DC8A080007A400 /* EnterPhone */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB515824DC8A080007A400 /* DefaultEnterPhoneController.swift */,
+				ACCB515924DC8A080007A400 /* EnterPhoneProtocols.swift */,
+				ACCB515A24DC8A080007A400 /* DefaultEnterPhoneView.swift */,
+			);
+			path = EnterPhone;
+			sourceTree = "<group>";
+		};
+		ACCB516124DC8A4D0007A400 /* UIServices */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB516224DC8A5F0007A400 /* AlertManager.swift */,
+			);
+			path = UIServices;
+			sourceTree = "<group>";
+		};
 		ACCE4E1424D36D32007369A0 /* Alerts */ = {
 			isa = PBXGroup;
 			children = (
+				ACCB516424DC8AA10007A400 /* SimpleAlertController.swift */,
 				ACCE4E1524D36D51007369A0 /* TypeAlertController.swift */,
 			);
 			path = Alerts;
@@ -419,6 +475,7 @@
 				AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */,
 				AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */,
 				AC9BC19E24D91D6B0028E68C /* ShadowTitlableTextField.swift in Sources */,
+				ACCB516524DC8AA10007A400 /* SimpleAlertController.swift in Sources */,
 				ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */,
 				ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */,
 				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
@@ -429,24 +486,31 @@
 				ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */,
 				AC3C7E2B24D3107D00B83252 /* OrderCell.swift in Sources */,
 				AC9BC19D24D91D6B0028E68C /* PhoneTitlableTextField.swift in Sources */,
+				ACCB516024DC8A080007A400 /* DefaultEnterPhoneView.swift in Sources */,
 				AC7D336224D91ED200726008 /* String+Extensions.swift in Sources */,
 				AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */,
 				ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */,
 				ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */,
 				ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */,
+				ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */,
 				AC08246024DA4684006F0072 /* DefaultSettingsController.swift in Sources */,
+				ACCB515D24DC8A080007A400 /* DefaultEnterNameController.swift in Sources */,
 				AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */,
 				AC9BC19524D919820028E68C /* DefaultNewPromotionView.swift in Sources */,
 				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,
 				AC9BC19724D919D80028E68C /* DefaultNewPromotionController.swift in Sources */,
+				ACCB515C24DC8A080007A400 /* DefaultEnterNameView.swift in Sources */,
 				AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */,
 				ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */,
 				AC9BC19924D91B4D0028E68C /* Promotion.swift in Sources */,
 				ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */,
+				ACCB515F24DC8A080007A400 /* EnterPhoneProtocols.swift in Sources */,
 				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
+				ACCB516324DC8A5F0007A400 /* AlertManager.swift in Sources */,
 				AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
 				AC08246224DA468C006F0072 /* DefaultSettingsView.swift in Sources */,
+				ACCB515B24DC8A080007A400 /* EnterNameProtocols.swift in Sources */,
 				AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */,
 				AC3C7E2024D3086400B83252 /* OrdersProtocols.swift in Sources */,
 			);
