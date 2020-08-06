@@ -19,6 +19,7 @@ extension UIFont {
     struct Alert {
         static let title = UIFont.systemFont(ofSize: 18, weight: .semibold)
         static let textField = UIFont.systemFont(ofSize: 14)
+        static let message = UIFont.systemFont(ofSize: 14)
     }
     
     struct Button {

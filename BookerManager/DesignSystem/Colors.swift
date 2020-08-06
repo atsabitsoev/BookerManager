@@ -40,5 +40,8 @@ extension UIColor {
         static let reject = UIColor(named: "alertReject")!
         static let simple = UIColor(named: "alertSimple")!
         static let title = UIColor(named: "alertTitle")!
+        static let mainView = UIColor.white
+        static let background = UIColor.black.withAlphaComponent(0.5)
+        static let message = UIColor.black
     }
 }
