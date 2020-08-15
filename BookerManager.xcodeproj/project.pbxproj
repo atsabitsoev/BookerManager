@@ -13,6 +13,8 @@
 		AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246324DA4694006F0072 /* SettingsProtocols.swift */; };
 		AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246524DA4CE0006F0072 /* SwitchView.swift */; };
 		AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */; };
+		AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09D56924E81719003D12D6 /* AuthService.swift */; };
+		AC12616B24E378770092D627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC12616A24E378770092D627 /* GoogleService-Info.plist */; };
 		AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0424D307BA00B83252 /* AppDelegate.swift */; };
 		AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */; };
 		AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0D24D307BA00B83252 /* Assets.xcassets */; };
@@ -40,9 +42,6 @@
 		ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */; };
 		ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFAA24D8F0D400B218FD /* PromotionsListProtocols.swift */; };
 		ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFAB24D8F0D400B218FD /* PromotionItem.swift */; };
-		ACCB515B24DC8A080007A400 /* EnterNameProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */; };
-		ACCB515C24DC8A080007A400 /* DefaultEnterNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */; };
-		ACCB515D24DC8A080007A400 /* DefaultEnterNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */; };
 		ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515824DC8A080007A400 /* DefaultEnterPhoneController.swift */; };
 		ACCB515F24DC8A080007A400 /* EnterPhoneProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515924DC8A080007A400 /* EnterPhoneProtocols.swift */; };
 		ACCB516024DC8A080007A400 /* DefaultEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB515A24DC8A080007A400 /* DefaultEnterPhoneView.swift */; };
@@ -62,6 +61,9 @@
 		AC08246324DA4694006F0072 /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		AC08246524DA4CE0006F0072 /* SwitchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchView.swift; sourceTree = "<group>"; };
 		AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronCellView.swift; sourceTree = "<group>"; };
+		AC09D56924E81719003D12D6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AC09D56B24E81B5E003D12D6 /* BookerManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookerManager.entitlements; sourceTree = "<group>"; };
+		AC12616A24E378770092D627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC3C7E0124D307BA00B83252 /* BookerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C7E0424D307BA00B83252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,9 +93,6 @@
 		ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListController.swift; sourceTree = "<group>"; };
 		ACC2CFAA24D8F0D400B218FD /* PromotionsListProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionsListProtocols.swift; sourceTree = "<group>"; };
 		ACC2CFAB24D8F0D400B218FD /* PromotionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromotionItem.swift; sourceTree = "<group>"; };
-		ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameProtocols.swift; sourceTree = "<group>"; };
-		ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterNameView.swift; sourceTree = "<group>"; };
-		ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterNameController.swift; sourceTree = "<group>"; };
 		ACCB515824DC8A080007A400 /* DefaultEnterPhoneController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterPhoneController.swift; sourceTree = "<group>"; };
 		ACCB515924DC8A080007A400 /* EnterPhoneProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterPhoneProtocols.swift; sourceTree = "<group>"; };
 		ACCB515A24DC8A080007A400 /* DefaultEnterPhoneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultEnterPhoneView.swift; sourceTree = "<group>"; };
@@ -145,6 +144,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		AC09D56824E816F5003D12D6 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				AC09D56924E81719003D12D6 /* AuthService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
 		AC3C7DF824D307BA00B83252 = {
 			isa = PBXGroup;
 			children = (
@@ -166,10 +173,13 @@
 		AC3C7E0324D307BA00B83252 /* BookerManager */ = {
 			isa = PBXGroup;
 			children = (
+				AC09D56B24E81B5E003D12D6 /* BookerManager.entitlements */,
+				AC09D56824E816F5003D12D6 /* NetworkServices */,
 				ACCB516124DC8A4D0007A400 /* UIServices */,
 				AC3C7E2124D3097500B83252 /* DesignSystem */,
 				AC3C7E1924D3080800B83252 /* Modules */,
 				AC3C7E1824D307F700B83252 /* SupportingFiles */,
+				AC12616A24E378770092D627 /* GoogleService-Info.plist */,
 			);
 			path = BookerManager;
 			sourceTree = "<group>";
@@ -293,20 +303,9 @@
 		ACCB515224DC89E60007A400 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				ACCB515324DC8A080007A400 /* EnterName */,
 				ACCB515724DC8A080007A400 /* EnterPhone */,
 			);
 			path = Authorization;
-			sourceTree = "<group>";
-		};
-		ACCB515324DC8A080007A400 /* EnterName */ = {
-			isa = PBXGroup;
-			children = (
-				ACCB515424DC8A080007A400 /* EnterNameProtocols.swift */,
-				ACCB515524DC8A080007A400 /* DefaultEnterNameView.swift */,
-				ACCB515624DC8A080007A400 /* DefaultEnterNameController.swift */,
-			);
-			path = EnterName;
 			sourceTree = "<group>";
 		};
 		ACCB515724DC8A080007A400 /* EnterPhone */ = {
@@ -419,6 +418,7 @@
 			files = (
 				AC3C7E1124D307BA00B83252 /* LaunchScreen.storyboard in Resources */,
 				AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */,
+				AC12616B24E378770092D627 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +481,7 @@
 				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
 				AC3C7E2324D3098000B83252 /* Colors.swift in Sources */,
 				AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */,
+				AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */,
 				AC9BC19324D919560028E68C /* PromotionProtocols.swift in Sources */,
 				AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */,
 				ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */,
@@ -494,12 +495,10 @@
 				ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */,
 				ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */,
 				AC08246024DA4684006F0072 /* DefaultSettingsController.swift in Sources */,
-				ACCB515D24DC8A080007A400 /* DefaultEnterNameController.swift in Sources */,
 				AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */,
 				AC9BC19524D919820028E68C /* DefaultNewPromotionView.swift in Sources */,
 				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,
 				AC9BC19724D919D80028E68C /* DefaultNewPromotionController.swift in Sources */,
-				ACCB515C24DC8A080007A400 /* DefaultEnterNameView.swift in Sources */,
 				AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */,
 				ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */,
 				AC9BC19924D91B4D0028E68C /* Promotion.swift in Sources */,
@@ -510,7 +509,6 @@
 				AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
 				AC08246224DA468C006F0072 /* DefaultSettingsView.swift in Sources */,
-				ACCB515B24DC8A080007A400 /* EnterNameProtocols.swift in Sources */,
 				AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */,
 				AC3C7E2024D3086400B83252 /* OrdersProtocols.swift in Sources */,
 			);
@@ -649,6 +647,8 @@
 			baseConfigurationReference = A9F49EF67C4AD9791400A875 /* Pods-BookerManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BookerManager/BookerManager.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = BookerManager/SupportingFiles/Info.plist;
@@ -657,8 +657,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.BookerManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.BookerManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -669,6 +670,8 @@
 			baseConfigurationReference = D9CB703FC4705516DE75DFDF /* Pods-BookerManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BookerManager/BookerManager.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = BookerManager/SupportingFiles/Info.plist;
@@ -677,8 +680,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.BookerManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bitsoev.BookerManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

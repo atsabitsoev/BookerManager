@@ -74,6 +74,8 @@ final class DefaultEnterPhoneView: UIView, EnterPhoneView {
         verticalStackView.addArrangedSubview(smsCodeTextField)
         setNeedsUpdateConstraints()
         sendCodeButton.addTarget(self, action: #selector(sendCodeButtonTapped), for: .touchUpInside)
+        smsCodeTextField.addTarget(target: self, action: #selector(smsCodeChanged), for: .editingChanged)
+        smsCodeTextField.delegate = self
         _ = phoneTextField.becomeFirstResponder()
     }
     
@@ -124,5 +126,21 @@ final class DefaultEnterPhoneView: UIView, EnterPhoneView {
         }
         controller.sendCodeButtonTapped(phoneNumber: phone)
     }
+    
+    @objc private func smsCodeChanged() {
+        if let text = smsCodeTextField.text {
+            if text.count == 6 {
+                controller.smsCodeEntered(code: text)
+            }
+        }
+    }
         
+}
+
+extension DefaultEnterPhoneView: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        guard let text = textField.text else { return true }
+        return (text.count + (string.count - range.length)) <= 6
+    }
 }
