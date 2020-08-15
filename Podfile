@@ -9,4 +9,8 @@ target 'BookerManager' do
   pod 'SDWebImage', '~> 5.0'
   pod 'PhoneNumberKit', '~> 3.1'
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+
 end

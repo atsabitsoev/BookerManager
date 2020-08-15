@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import IQKeyboardManagerSwift
 
 @UIApplicationMain
@@ -15,10 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        FirebaseApp.configure()
+        
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Готово"
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BMTabBarController()
+        window?.rootViewController = BMNavigationController(rootViewController: DefaultEnterPhoneController())
         window?.makeKeyAndVisible()
         return true
     }
