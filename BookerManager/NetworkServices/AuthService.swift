@@ -21,15 +21,19 @@ final class AuthService {
     
     private func checkManagerExist(withPhone phone: String, handler: @escaping (Bool, Error?) -> ()) {
         let db = Firestore.firestore()
-        db.collection("managers").whereField("phone", isEqualTo: phone).getDocuments { (query, error) in
+        
+        db.collection("restaurants").whereField("managers", arrayContains: phone).getDocuments { [weak self] (query, error) in
             if let error = error {
                 handler(false, error)
                 return
             }
-            guard let _ = query?.documents.first else {
+            guard let restaurantDoc = query?.documents.first else {
                 handler(false, nil)
                 return
             }
+            let restaurantId = restaurantDoc.documentID
+            self?.saveRestaurantId(restaurantId)
+            
             handler(true, nil)
         }
     }
@@ -69,6 +73,10 @@ final class AuthService {
             handler(true, wasRegisteredEarlier, nil)
             print(user)
         }
+    }
+    
+    private func saveRestaurantId(_ id: String) {
+        UserInfoService().restaurantId = id
     }
     
 }

@@ -10,6 +10,7 @@ import UIKit
 
 protocol OrdersView: UIView {
     func configureView()
+    func setAllOrderItems(_ items: [OrderItem])
     func alertOrderActions()
 }
 

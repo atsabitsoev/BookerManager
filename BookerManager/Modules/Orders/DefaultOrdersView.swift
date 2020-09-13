@@ -85,11 +85,6 @@ final class DefaultOrdersView: UIView, OrdersView {
         tableView.tableHeaderView = tableHeaderView
         tableView.register(OrderCell.self, forCellReuseIdentifier: OrderCell.identifier)
         setNeedsUpdateConstraints()
-        allOrderItems = [
-            OrderItem(date: "18:00, сегодня", personsCount: 4, name: "Андрей Петров", state: .waiting, orderId: "1"),
-            OrderItem(date: "19:20, сегодня", personsCount: 2, name: "Сизый", state: .ready, orderId: "2"),
-            OrderItem(date: "20:30, сегодня", personsCount: 3, name: "Александр Якунин", state: .waiting, orderId: "3")
-        ]
     }
     
     func alertOrderActions() {
@@ -134,6 +129,11 @@ final class DefaultOrdersView: UIView, OrdersView {
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor)
         ])
+    }
+    
+    func setAllOrderItems(_ items: [OrderItem]) {
+        allOrderItems = items
+        tableView.reloadData()
     }
     
     @objc private func segmentChanged() {

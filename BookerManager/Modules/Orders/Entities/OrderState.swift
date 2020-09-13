@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum OrderState {
+enum OrderState: String {
     case waiting
     case ready
 }

@@ -15,6 +15,10 @@
 		AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */; };
 		AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09D56924E81719003D12D6 /* AuthService.swift */; };
 		AC12616B24E378770092D627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC12616A24E378770092D627 /* GoogleService-Info.plist */; };
+		AC1749F4250D99BE00FB7702 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749F3250D99BE00FB7702 /* Order.swift */; };
+		AC1749F6250D9AF300FB7702 /* OrdersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749F5250D9AF300FB7702 /* OrdersService.swift */; };
+		AC1749F9250D9C7100FB7702 /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749F8250D9C7100FB7702 /* UserInfoService.swift */; };
+		AC1749FC250DA9AE00FB7702 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749FB250DA9AE00FB7702 /* DateExtensions.swift */; };
 		AC3C7E0524D307BA00B83252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0424D307BA00B83252 /* AppDelegate.swift */; };
 		AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */; };
 		AC3C7E0E24D307BA00B83252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3C7E0D24D307BA00B83252 /* Assets.xcassets */; };
@@ -64,6 +68,10 @@
 		AC09D56924E81719003D12D6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AC09D56B24E81B5E003D12D6 /* BookerManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookerManager.entitlements; sourceTree = "<group>"; };
 		AC12616A24E378770092D627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC1749F3250D99BE00FB7702 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		AC1749F5250D9AF300FB7702 /* OrdersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersService.swift; sourceTree = "<group>"; };
+		AC1749F8250D9C7100FB7702 /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
+		AC1749FB250DA9AE00FB7702 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		AC3C7E0124D307BA00B83252 /* BookerManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookerManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3C7E0424D307BA00B83252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3C7E0624D307BA00B83252 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,8 +156,33 @@
 			isa = PBXGroup;
 			children = (
 				AC09D56924E81719003D12D6 /* AuthService.swift */,
+				AC1749F5250D9AF300FB7702 /* OrdersService.swift */,
 			);
 			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		AC1749F2250D99A600FB7702 /* NetworkEntities */ = {
+			isa = PBXGroup;
+			children = (
+				AC1749F3250D99BE00FB7702 /* Order.swift */,
+			);
+			path = NetworkEntities;
+			sourceTree = "<group>";
+		};
+		AC1749F7250D9C5900FB7702 /* LocalDBServices */ = {
+			isa = PBXGroup;
+			children = (
+				AC1749F8250D9C7100FB7702 /* UserInfoService.swift */,
+			);
+			path = LocalDBServices;
+			sourceTree = "<group>";
+		};
+		AC1749FA250DA99D00FB7702 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC1749FB250DA9AE00FB7702 /* DateExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AC3C7DF824D307BA00B83252 = {
@@ -174,6 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				AC09D56B24E81B5E003D12D6 /* BookerManager.entitlements */,
+				AC1749FA250DA99D00FB7702 /* Extensions */,
+				AC1749F7250D9C5900FB7702 /* LocalDBServices */,
+				AC1749F2250D99A600FB7702 /* NetworkEntities */,
 				AC09D56824E816F5003D12D6 /* NetworkServices */,
 				ACCB516124DC8A4D0007A400 /* UIServices */,
 				AC3C7E2124D3097500B83252 /* DesignSystem */,
@@ -476,10 +512,12 @@
 				AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */,
 				AC9BC19E24D91D6B0028E68C /* ShadowTitlableTextField.swift in Sources */,
 				ACCB516524DC8AA10007A400 /* SimpleAlertController.swift in Sources */,
+				AC1749FC250DA9AE00FB7702 /* DateExtensions.swift in Sources */,
 				ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */,
 				ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */,
 				AC3C7E2824D30DFE00B83252 /* BMTabBarController.swift in Sources */,
 				AC3C7E2324D3098000B83252 /* Colors.swift in Sources */,
+				AC1749F9250D9C7100FB7702 /* UserInfoService.swift in Sources */,
 				AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */,
 				AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */,
 				AC9BC19324D919560028E68C /* PromotionProtocols.swift in Sources */,
@@ -491,6 +529,7 @@
 				AC7D336224D91ED200726008 /* String+Extensions.swift in Sources */,
 				AC3C7E2F24D3165B00B83252 /* OrderItem.swift in Sources */,
 				ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */,
+				AC1749F6250D9AF300FB7702 /* OrdersService.swift in Sources */,
 				ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */,
 				ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */,
 				ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */,
@@ -507,6 +546,7 @@
 				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
 				ACCB516324DC8A5F0007A400 /* AlertManager.swift in Sources */,
 				AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */,
+				AC1749F4250D99BE00FB7702 /* Order.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
 				AC08246224DA468C006F0072 /* DefaultSettingsView.swift in Sources */,
 				AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */,
