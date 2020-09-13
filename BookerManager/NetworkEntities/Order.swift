@@ -13,5 +13,6 @@ struct Order {
     var personsCount: Int
     var name: String
     var state: String
+    var phone: String
     var orderId: String
 }
