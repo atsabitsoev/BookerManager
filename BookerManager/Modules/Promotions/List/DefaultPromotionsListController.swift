@@ -43,7 +43,11 @@ final class DefaultPromotionsListController: UIViewController, PromotionsListCon
     func showDeleteAlert(forPromotionId promotionId: String) {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let deleteAction = UIAlertAction(title: "Удалить", style: .destructive) { (_) in
-            self.showConfirmDeleteAlert(promotionId: promotionId)
+            if let imageUrl = self.promotions.first(where: { (promotion) -> Bool in
+                return promotion.id == promotionId
+            })?.image {
+                self.showConfirmDeleteAlert(promotionId: promotionId, imageUrl: imageUrl)
+            }
         }
         let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
         alert.addAction(deleteAction)
@@ -63,10 +67,10 @@ final class DefaultPromotionsListController: UIViewController, PromotionsListCon
         }
     }
     
-    private func showConfirmDeleteAlert(promotionId: String) {
+    private func showConfirmDeleteAlert(promotionId: String, imageUrl: String) {
         let alert = UIAlertController(title: "Вы уверены?", message: nil, preferredStyle: .alert)
         let deleteAction = UIAlertAction(title: "Удалить", style: .destructive, handler: { (_) in
-            self.deleteAction(promotionId: promotionId)
+            self.deleteAction(promotionId: promotionId, imageUrl: imageUrl)
         })
         let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
         alert.addAction(deleteAction)
@@ -74,8 +78,8 @@ final class DefaultPromotionsListController: UIViewController, PromotionsListCon
         self.present(alert, animated: true, completion: nil)
     }
     
-    private func deleteAction(promotionId: String) {
-        promotionService.deletePromotion(withId: promotionId) { [weak self] (succeed, errorString) in
+    private func deleteAction(promotionId: String, imageUrl: String) {
+        promotionService.deletePromotion(withId: promotionId, imageUrl: imageUrl) { [weak self] (succeed, errorString) in
             if !succeed {
                 self?.alertManager.showAlert(title: "Ошибка", message: errorString ?? "Что-то пошло не так...", action: nil)
             }

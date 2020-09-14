@@ -10,6 +10,8 @@ import FirebaseFirestore
 
 final class PromotionService {
     
+    private let storageService = StorageService()
+    
     func getAllPromotions(_ handler: @escaping ([Promotion]?, String?) -> ()) {
         
         let db = Firestore.firestore()
@@ -40,7 +42,42 @@ final class PromotionService {
         }
     }
     
+    func createPromotion(withTitle title: String,
+                         description: String,
+                         image: UIImage,
+                         _ handler: @escaping (Bool, String?) -> ()) {
+        
+        storageService.uploadImage(image) { (url, error) in
+            guard let url = url else {
+                handler(false, "Не удалось загрузить картинку")
+                return
+            }
+            let db = Firestore.firestore()
+            guard let restaurantId = UserInfoService().restaurantId else {
+                handler(false, "Ресторан не найден")
+                return
+            }
+            let newPromotionData: [String: Any] = [
+                "title": title,
+                "description": description,
+                "image": url
+            ]
+            db
+                .collection("restaurants")
+                .document(restaurantId)
+                .collection("promotions")
+                .addDocument(data: newPromotionData) { (error) in
+                    if let error = error {
+                        handler(false, error.localizedDescription)
+                    } else {
+                        handler(true, nil)
+                    }
+            }
+        }
+    }
+    
     func deletePromotion(withId promotionId: String,
+                         imageUrl: String,
                          _ handler: @escaping (Bool, String?) -> ()) {
         
         let db = Firestore.firestore()
@@ -51,11 +88,14 @@ final class PromotionService {
         
         db.collection("restaurants").document(restaurantId).collection("promotions").document(promotionId).getDocument { (document, error) in
             if let promotionDocument = document {
-                promotionDocument.reference.delete { (error) in
+                promotionDocument.reference.delete { [weak self] (error) in
                     if let error = error {
                         handler(false, error.localizedDescription)
                     } else {
-                        handler(true, nil)
+                        self?.storageService.deleteFile(url: imageUrl, { (succeed, errorString) in
+                            let finalErrorString = succeed ? nil : (errorString ?? "Что-то пошло не так...")
+                            handler(succeed, finalErrorString)
+                        })
                     }
                 }
             } else {

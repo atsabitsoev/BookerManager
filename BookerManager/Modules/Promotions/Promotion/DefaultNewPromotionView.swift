@@ -95,6 +95,8 @@ final class DefaultNewPromotionView: UIView, NewPromotionViewing {
             textField.delegate = self
         }
         setImageButton.addTarget(self, action: #selector(setImageButtonTapped), for: .touchUpInside)
+        mainButton.addTarget(self, action: #selector(mainButtonTapped), for: .touchUpInside)
+        
         addSubview(scrollView)
         addSubview(mainButton)
         scrollView.addSubview(verticalStack)
@@ -168,6 +170,10 @@ final class DefaultNewPromotionView: UIView, NewPromotionViewing {
     
     @objc private func setImageButtonTapped() {
         controller.showImagePicker()
+    }
+    
+    @objc private func mainButtonTapped() {
+        controller.createPromotionAction()
     }
 }
 
