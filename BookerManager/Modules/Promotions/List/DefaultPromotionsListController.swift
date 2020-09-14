@@ -48,7 +48,9 @@ final class DefaultPromotionsListController: UIViewController, PromotionsListCon
         let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
         alert.addAction(deleteAction)
         alert.addAction(cancelAction)
-        self.present(alert, animated: true, completion: nil)
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     private func fetchPromotions() {
