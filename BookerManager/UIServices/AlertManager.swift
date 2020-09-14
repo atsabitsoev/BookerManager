@@ -10,7 +10,7 @@ import UIKit
 
 final class AlertManager {
     
-    private var vc: UIViewController
+    private unowned var vc: UIViewController
     
     init(vc: UIViewController) {
         self.vc = vc

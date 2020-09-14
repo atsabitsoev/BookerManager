@@ -2,15 +2,16 @@
 //  Promotion.swift
 //  BookerManager
 //
-//  Created by Ацамаз Бицоев on 04.08.2020.
+//  Created by Ацамаз Бицоев on 14.09.2020.
 //  Copyright © 2020 Ацамаз Бицоев. All rights reserved.
 //
 
 import Foundation
 
-struct Promotion {
+struct Promotion: Hashable {
+    
     var id: String
-    var name: String
+    var title: String
     var description: String
-    var imageUrl: String
+    var image: String
 }

@@ -37,10 +37,10 @@
 		AC9BC19324D919560028E68C /* PromotionProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19224D919560028E68C /* PromotionProtocols.swift */; };
 		AC9BC19524D919820028E68C /* DefaultNewPromotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19424D919820028E68C /* DefaultNewPromotionView.swift */; };
 		AC9BC19724D919D80028E68C /* DefaultNewPromotionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19624D919D80028E68C /* DefaultNewPromotionController.swift */; };
-		AC9BC19924D91B4D0028E68C /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19824D91B4D0028E68C /* Promotion.swift */; };
 		AC9BC19D24D91D6B0028E68C /* PhoneTitlableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19A24D91D6B0028E68C /* PhoneTitlableTextField.swift */; };
 		AC9BC19E24D91D6B0028E68C /* ShadowTitlableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19B24D91D6B0028E68C /* ShadowTitlableTextField.swift */; };
 		AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19C24D91D6B0028E68C /* TitlableTextField.swift */; };
+		AC9FFD5E250FB87800685C1A /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FFD5D250FB87800685C1A /* Promotion.swift */; };
 		ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA524D8EF5200B218FD /* PromotionCell.swift */; };
 		ACC2CFAC24D8F0D400B218FD /* DefaultPromotionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA824D8F0D400B218FD /* DefaultPromotionsListView.swift */; };
 		ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */; };
@@ -55,6 +55,7 @@
 		ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCE4E1824D37008007369A0 /* BMButton.swift */; };
 		ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAE7FA24D9295F007F2535 /* CreatingPromotion.swift */; };
 		ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDAE7FD24D932BE007F2535 /* ImagePicker.swift */; };
+		ACE06C0A250FB8C60027F74A /* PromotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE06C09250FB8C60027F74A /* PromotionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,10 +93,10 @@
 		AC9BC19224D919560028E68C /* PromotionProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionProtocols.swift; sourceTree = "<group>"; };
 		AC9BC19424D919820028E68C /* DefaultNewPromotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNewPromotionView.swift; sourceTree = "<group>"; };
 		AC9BC19624D919D80028E68C /* DefaultNewPromotionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNewPromotionController.swift; sourceTree = "<group>"; };
-		AC9BC19824D91B4D0028E68C /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
 		AC9BC19A24D91D6B0028E68C /* PhoneTitlableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneTitlableTextField.swift; sourceTree = "<group>"; };
 		AC9BC19B24D91D6B0028E68C /* ShadowTitlableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTitlableTextField.swift; sourceTree = "<group>"; };
 		AC9BC19C24D91D6B0028E68C /* TitlableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlableTextField.swift; sourceTree = "<group>"; };
+		AC9FFD5D250FB87800685C1A /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
 		ACC2CFA524D8EF5200B218FD /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
 		ACC2CFA824D8F0D400B218FD /* DefaultPromotionsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListView.swift; sourceTree = "<group>"; };
 		ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListController.swift; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		ACCE4E1824D37008007369A0 /* BMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMButton.swift; sourceTree = "<group>"; };
 		ACDAE7FA24D9295F007F2535 /* CreatingPromotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingPromotion.swift; sourceTree = "<group>"; };
 		ACDAE7FD24D932BE007F2535 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		ACE06C09250FB8C60027F74A /* PromotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionService.swift; sourceTree = "<group>"; };
 		D9CB703FC4705516DE75DFDF /* Pods-BookerManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookerManager.release.xcconfig"; path = "Target Support Files/Pods-BookerManager/Pods-BookerManager.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +159,7 @@
 			children = (
 				AC09D56924E81719003D12D6 /* AuthService.swift */,
 				AC1749F5250D9AF300FB7702 /* OrdersService.swift */,
+				ACE06C09250FB8C60027F74A /* PromotionService.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				AC1749F3250D99BE00FB7702 /* Order.swift */,
+				AC9FFD5D250FB87800685C1A /* Promotion.swift */,
 			);
 			path = NetworkEntities;
 			sourceTree = "<group>";
@@ -329,7 +333,6 @@
 		ACC2CFA724D8F0D400B218FD /* Promotions */ = {
 			isa = PBXGroup;
 			children = (
-				AC9BC19824D91B4D0028E68C /* Promotion.swift */,
 				AC9BC19024D9193C0028E68C /* List */,
 				AC9BC19124D919470028E68C /* Promotion */,
 			);
@@ -539,12 +542,13 @@
 				AC3C7E1E24D3085A00B83252 /* DefaultOrdersView.swift in Sources */,
 				AC9BC19724D919D80028E68C /* DefaultNewPromotionController.swift in Sources */,
 				AC3C7E2D24D3128900B83252 /* Fonts.swift in Sources */,
+				AC9FFD5E250FB87800685C1A /* Promotion.swift in Sources */,
 				ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */,
-				AC9BC19924D91B4D0028E68C /* Promotion.swift in Sources */,
 				ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */,
 				ACCB515F24DC8A080007A400 /* EnterPhoneProtocols.swift in Sources */,
 				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
 				ACCB516324DC8A5F0007A400 /* AlertManager.swift in Sources */,
+				ACE06C0A250FB8C60027F74A /* PromotionService.swift in Sources */,
 				AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */,
 				AC1749F4250D99BE00FB7702 /* Order.swift in Sources */,
 				AC3C7E0724D307BA00B83252 /* SceneDelegate.swift in Sources */,
