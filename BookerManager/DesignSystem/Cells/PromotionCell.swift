@@ -122,11 +122,10 @@ final class PromotionCell: UITableViewCell {
         let imageHeight = imageWidth
         NSLayoutConstraint.activate([
             promotionImage.heightAnchor.constraint(equalToConstant: imageHeight),
-            promotionImage.widthAnchor.constraint(equalToConstant: imageWidth),
             promotionImage.topAnchor.constraint(equalTo: mainView.topAnchor),
             promotionImage.bottomAnchor.constraint(equalTo: descriptionView.topAnchor, constant: 16),
             promotionImage.leadingAnchor.constraint(equalTo: mainView.leadingAnchor),
-            promotionImage.trailingAnchor.constraint(equalTo: promotionImage.trailingAnchor)
+            promotionImage.trailingAnchor.constraint(equalTo: mainView.trailingAnchor)
         ])
     }
     

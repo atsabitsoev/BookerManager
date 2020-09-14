@@ -177,6 +177,9 @@ PODS:
   - Firebase/Firestore (6.22.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 1.12.0)
+  - Firebase/Storage (6.22.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 3.6.0)
   - FirebaseAnalytics (6.4.1):
     - FirebaseCore (~> 6.6)
     - FirebaseInstallations (~> 1.1)
@@ -222,6 +225,10 @@ PODS:
     - FirebaseCore (~> 6.6)
     - GoogleUtilities/UserDefaults (~> 6.5)
     - PromisesObjC (~> 1.2)
+  - FirebaseStorage (3.6.1):
+    - FirebaseAuthInterop (~> 1.1)
+    - FirebaseCore (~> 6.6)
+    - GTMSessionFetcher/Core (~> 1.1)
   - GoogleAppMeasurement (6.4.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -289,6 +296,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Auth
   - Firebase/Firestore
+  - Firebase/Storage
   - IQKeyboardManagerSwift
   - PhoneNumberKit (~> 3.1)
   - SDWebImage (~> 5.0)
@@ -306,6 +314,7 @@ SPEC REPOS:
     - FirebaseCoreDiagnosticsInterop
     - FirebaseFirestore
     - FirebaseInstallations
+    - FirebaseStorage
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
@@ -332,6 +341,7 @@ SPEC CHECKSUMS:
   FirebaseCoreDiagnosticsInterop: 296e2c5f5314500a850ad0b83e9e7c10b011a850
   FirebaseFirestore: a750487e2019ac35464c78311dcf2fde9d817c52
   FirebaseInstallations: acb3216eb9784d3b1d2d2d635ff74fa892cc0c44
+  FirebaseStorage: f4f39ae834a7145963b913f54e2f24a9db1d8fac
   GoogleAppMeasurement: e49be3954045b17d046f271b9cc1ec052bad9702
   GoogleDataTransport: 6ffa4dd0b6d547f8d27b91bd92fa9e197a3f5f1f
   GoogleDataTransportCCTSupport: 2d7e609f8c5af1a33d7d59053e6f8cba59365df5
@@ -346,6 +356,6 @@ SPEC CHECKSUMS:
   PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
 
-PODFILE CHECKSUM: fe9edb2641f7b5552ea23bd261d09889dad8905b
+PODFILE CHECKSUM: ee461b923765ff0a1ed2e1f8b01cf0792761cdcf
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

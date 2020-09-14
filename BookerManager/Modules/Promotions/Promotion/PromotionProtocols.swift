@@ -20,4 +20,5 @@ protocol NewPromotionControlling: UIViewController {
     func setName(to newName: String?)
     func setDescription(to newDescription: String?)
     func showImagePicker()
+    func createPromotionAction()
 }

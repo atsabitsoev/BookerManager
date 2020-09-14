@@ -11,8 +11,9 @@ import UIKit
 
 protocol PromotionsListViewing: UIView {
     func configureView()
+    func setPromotionItems(_ items: [PromotionItem])
 }
 
 protocol PromotionsListControlling: UIViewController {
-    func showDeleteAlert(forPromotionId: String)
+    func showDeleteAlert(forPromotionId promotionId: String)
 }

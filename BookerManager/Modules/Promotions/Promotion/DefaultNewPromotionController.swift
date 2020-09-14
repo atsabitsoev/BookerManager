@@ -12,6 +12,8 @@ final class DefaultNewPromotionController: UIViewController, NewPromotionControl
     
     fileprivate var newPromotionView: NewPromotionViewing!
     private var imagePicker: ImagePicker!
+    private let promotionService = PromotionService()
+    private lazy var alertManager = AlertManager(vc: self)
     
     private(set) var creatingPromotion = CreatingPromotion()
     
@@ -40,6 +42,23 @@ final class DefaultNewPromotionController: UIViewController, NewPromotionControl
     
     func showImagePicker() {
         imagePicker.present(from: newPromotionView)
+    }
+    
+    func createPromotionAction() {
+        if creatingPromotion.isFilled {
+            promotionService.createPromotion(
+                withTitle: creatingPromotion.name!,
+                description: creatingPromotion.description!,
+                image: creatingPromotion.image!) { [weak self] (succeed, errorString) in
+                    if succeed {
+                        self?.alertManager.showAlert(title: "Ура!", message: "Акция успешно загружена", action: {
+                            self?.navigationController?.popViewController(animated: true)
+                        })
+                    } else {
+                        self?.alertManager.showAlert(title: "Ошибка", message: errorString ?? "Что-то пошло не так...", action: nil)
+                    }
+            }
+        }
     }
     
 }
