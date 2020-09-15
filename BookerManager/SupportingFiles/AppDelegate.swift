@@ -21,9 +21,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Готово"
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = BMNavigationController(rootViewController: DefaultEnterPhoneController())
-        window?.makeKeyAndVisible()
+        
+        
+        if #available(iOS 13.0, *) {
+            
+        } else {
+            let currentUser = Auth.auth().currentUser
+            currentUser?.reload()
+            let userLoggedIn = currentUser != nil
+            window = UIWindow(frame: UIScreen.main.bounds)
+            let rootViewController = userLoggedIn ? BMTabBarController() : BMNavigationController(rootViewController: DefaultEnterPhoneController())
+            window?.rootViewController = rootViewController
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
