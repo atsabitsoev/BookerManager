@@ -6,7 +6,7 @@
 //  Copyright © 2020 Ацамаз Бицоев. All rights reserved.
 //
 
-import UIKit
+import Firebase
 
 @available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -20,7 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = BMNavigationController(rootViewController: DefaultEnterPhoneController())
+        let currentUser = Auth.auth().currentUser
+        currentUser?.reload()
+        let userLoggedIn = currentUser != nil
+        let rootViewController = userLoggedIn ? BMTabBarController() : BMNavigationController(rootViewController: DefaultEnterPhoneController())
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
     }
 
