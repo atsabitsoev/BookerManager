@@ -14,6 +14,7 @@
 		AC08246624DA4CE0006F0072 /* SwitchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246524DA4CE0006F0072 /* SwitchView.swift */; };
 		AC08246C24DA4EE0006F0072 /* ChevronCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */; };
 		AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09D56924E81719003D12D6 /* AuthService.swift */; };
+		AC0D25BA251196AA00C2FFBA /* DiscountsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D25B9251196AA00C2FFBA /* DiscountsService.swift */; };
 		AC12616B24E378770092D627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC12616A24E378770092D627 /* GoogleService-Info.plist */; };
 		AC1749F4250D99BE00FB7702 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749F3250D99BE00FB7702 /* Order.swift */; };
 		AC1749F6250D9AF300FB7702 /* OrdersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1749F5250D9AF300FB7702 /* OrdersService.swift */; };
@@ -42,6 +43,11 @@
 		AC9BC19E24D91D6B0028E68C /* ShadowTitlableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19B24D91D6B0028E68C /* ShadowTitlableTextField.swift */; };
 		AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9BC19C24D91D6B0028E68C /* TitlableTextField.swift */; };
 		AC9FFD5E250FB87800685C1A /* Promotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9FFD5D250FB87800685C1A /* Promotion.swift */; };
+		ACC1712B25119C2200CC59B2 /* DefaultDiscountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1712A25119C2200CC59B2 /* DefaultDiscountController.swift */; };
+		ACC1712D25119C2D00CC59B2 /* DefaultDiscountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1712C25119C2D00CC59B2 /* DefaultDiscountView.swift */; };
+		ACC1712F25119C3800CC59B2 /* DiscountProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC1712E25119C3800CC59B2 /* DiscountProtocols.swift */; };
+		ACC171322511A44200CC59B2 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC171312511A44200CC59B2 /* ScannerViewController.swift */; };
+		ACC171342511A77700CC59B2 /* Discount.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC171332511A77700CC59B2 /* Discount.swift */; };
 		ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA524D8EF5200B218FD /* PromotionCell.swift */; };
 		ACC2CFAC24D8F0D400B218FD /* DefaultPromotionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA824D8F0D400B218FD /* DefaultPromotionsListView.swift */; };
 		ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */; };
@@ -69,6 +75,7 @@
 		AC08246B24DA4EE0006F0072 /* ChevronCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChevronCellView.swift; sourceTree = "<group>"; };
 		AC09D56924E81719003D12D6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AC09D56B24E81B5E003D12D6 /* BookerManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BookerManager.entitlements; sourceTree = "<group>"; };
+		AC0D25B9251196AA00C2FFBA /* DiscountsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountsService.swift; sourceTree = "<group>"; };
 		AC12616A24E378770092D627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC1749F3250D99BE00FB7702 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		AC1749F5250D9AF300FB7702 /* OrdersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersService.swift; sourceTree = "<group>"; };
@@ -99,6 +106,11 @@
 		AC9BC19B24D91D6B0028E68C /* ShadowTitlableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowTitlableTextField.swift; sourceTree = "<group>"; };
 		AC9BC19C24D91D6B0028E68C /* TitlableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitlableTextField.swift; sourceTree = "<group>"; };
 		AC9FFD5D250FB87800685C1A /* Promotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promotion.swift; sourceTree = "<group>"; };
+		ACC1712A25119C2200CC59B2 /* DefaultDiscountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDiscountController.swift; sourceTree = "<group>"; };
+		ACC1712C25119C2D00CC59B2 /* DefaultDiscountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDiscountView.swift; sourceTree = "<group>"; };
+		ACC1712E25119C3800CC59B2 /* DiscountProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountProtocols.swift; sourceTree = "<group>"; };
+		ACC171312511A44200CC59B2 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		ACC171332511A77700CC59B2 /* Discount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discount.swift; sourceTree = "<group>"; };
 		ACC2CFA524D8EF5200B218FD /* PromotionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromotionCell.swift; sourceTree = "<group>"; };
 		ACC2CFA824D8F0D400B218FD /* DefaultPromotionsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListView.swift; sourceTree = "<group>"; };
 		ACC2CFA924D8F0D400B218FD /* DefaultPromotionsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPromotionsListController.swift; sourceTree = "<group>"; };
@@ -163,6 +175,7 @@
 				AC1749F5250D9AF300FB7702 /* OrdersService.swift */,
 				ACE06C09250FB8C60027F74A /* PromotionService.swift */,
 				AC7BDF37251022D300C67CBF /* StorageService.swift */,
+				AC0D25B9251196AA00C2FFBA /* DiscountsService.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -172,6 +185,7 @@
 			children = (
 				AC1749F3250D99BE00FB7702 /* Order.swift */,
 				AC9FFD5D250FB87800685C1A /* Promotion.swift */,
+				ACC171332511A77700CC59B2 /* Discount.swift */,
 			);
 			path = NetworkEntities;
 			sourceTree = "<group>";
@@ -245,6 +259,8 @@
 				ACCB515224DC89E60007A400 /* Authorization */,
 				AC3C7E1A24D3084000B83252 /* Orders */,
 				ACC2CFA724D8F0D400B218FD /* Promotions */,
+				ACC1712925119BFD00CC59B2 /* Discount */,
+				ACC171302511A43100CC59B2 /* Scanner */,
 				AC08245E24DA4665006F0072 /* Settings */,
 			);
 			path = Modules;
@@ -331,6 +347,24 @@
 				ACDAE7FA24D9295F007F2535 /* CreatingPromotion.swift */,
 			);
 			path = Promotion;
+			sourceTree = "<group>";
+		};
+		ACC1712925119BFD00CC59B2 /* Discount */ = {
+			isa = PBXGroup;
+			children = (
+				ACC1712A25119C2200CC59B2 /* DefaultDiscountController.swift */,
+				ACC1712C25119C2D00CC59B2 /* DefaultDiscountView.swift */,
+				ACC1712E25119C3800CC59B2 /* DiscountProtocols.swift */,
+			);
+			path = Discount;
+			sourceTree = "<group>";
+		};
+		ACC171302511A43100CC59B2 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				ACC171312511A44200CC59B2 /* ScannerViewController.swift */,
+			);
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 		ACC2CFA724D8F0D400B218FD /* Promotions */ = {
@@ -519,6 +553,7 @@
 				AC3C7E2624D30AF000B83252 /* BMNavigationController.swift in Sources */,
 				AC9BC19E24D91D6B0028E68C /* ShadowTitlableTextField.swift in Sources */,
 				ACCB516524DC8AA10007A400 /* SimpleAlertController.swift in Sources */,
+				ACC171342511A77700CC59B2 /* Discount.swift in Sources */,
 				AC1749FC250DA9AE00FB7702 /* DateExtensions.swift in Sources */,
 				ACCE4E1624D36D51007369A0 /* TypeAlertController.swift in Sources */,
 				ACC2CFA624D8EF5200B218FD /* PromotionCell.swift in Sources */,
@@ -527,6 +562,7 @@
 				AC1749F9250D9C7100FB7702 /* UserInfoService.swift in Sources */,
 				AC08246424DA4694006F0072 /* SettingsProtocols.swift in Sources */,
 				AC09D56A24E81719003D12D6 /* AuthService.swift in Sources */,
+				ACC1712D25119C2D00CC59B2 /* DefaultDiscountView.swift in Sources */,
 				AC9BC19324D919560028E68C /* PromotionProtocols.swift in Sources */,
 				AC3C7E3224D3170D00B83252 /* OrderState.swift in Sources */,
 				ACCE4E1924D37008007369A0 /* BMButton.swift in Sources */,
@@ -538,8 +574,11 @@
 				ACC2CFAF24D8F0D400B218FD /* PromotionItem.swift in Sources */,
 				AC1749F6250D9AF300FB7702 /* OrdersService.swift in Sources */,
 				ACC2CFAE24D8F0D400B218FD /* PromotionsListProtocols.swift in Sources */,
+				AC0D25BA251196AA00C2FFBA /* DiscountsService.swift in Sources */,
 				ACDAE7FE24D932BE007F2535 /* ImagePicker.swift in Sources */,
+				ACC1712F25119C3800CC59B2 /* DiscountProtocols.swift in Sources */,
 				ACCB515E24DC8A080007A400 /* DefaultEnterPhoneController.swift in Sources */,
+				ACC1712B25119C2200CC59B2 /* DefaultDiscountController.swift in Sources */,
 				AC08246024DA4684006F0072 /* DefaultSettingsController.swift in Sources */,
 				AC9BC19F24D91D6B0028E68C /* TitlableTextField.swift in Sources */,
 				AC9BC19524D919820028E68C /* DefaultNewPromotionView.swift in Sources */,
@@ -549,6 +588,7 @@
 				AC9FFD5E250FB87800685C1A /* Promotion.swift in Sources */,
 				ACDAE7FB24D9295F007F2535 /* CreatingPromotion.swift in Sources */,
 				ACC2CFAD24D8F0D400B218FD /* DefaultPromotionsListController.swift in Sources */,
+				ACC171322511A44200CC59B2 /* ScannerViewController.swift in Sources */,
 				ACCB515F24DC8A080007A400 /* EnterPhoneProtocols.swift in Sources */,
 				AC3C7E1C24D3084E00B83252 /* DefaultOrdersController.swift in Sources */,
 				ACCB516324DC8A5F0007A400 /* AlertManager.swift in Sources */,
