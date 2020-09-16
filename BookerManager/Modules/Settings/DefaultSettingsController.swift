@@ -11,6 +11,8 @@ import UIKit
 final class DefaultSettingsController: UIViewController, SettingsControlling {
     
     private var settingsView: SettingsViewing!
+    private lazy var alertManager = AlertManager(vc: self)
+    private let discountsService = DiscountsQRService()
     
     override func loadView() {
         settingsView = DefaultSettingsView(controller: self)
@@ -28,10 +30,23 @@ final class DefaultSettingsController: UIViewController, SettingsControlling {
     }
     
     func createDiscontAlert() {
-        print("Показать alert с вводом строки для создания скидки")
+        let alert = TypeAlertController(
+            alertTitle: "Новая скидка",
+            buttonTitle: "Создать",
+            buttonState: .standard,
+            placeholder: "Описание скидки",
+            textInputNecessary: true) { [weak self] (discountDescription) in
+                guard let self = self,
+                    let discountDescription = discountDescription,
+                    let qrCode = self.discountsService.generateNewDiscountQR(description: discountDescription) else { return }
+                self.navigationController?.show(DefaultDiscountController(qrCode: qrCode, discountDescription: discountDescription), sender: nil)
+        }
+        alert.modalPresentationStyle = .overCurrentContext
+        alert.modalTransitionStyle = .crossDissolve
+        self.tabBarController?.present(alert, animated: true, completion: nil)
     }
     
     func checkDiscountCamera() {
-        print("Открыть камеру для сканирования штрихкода скидки и проверки ее актуальности")
+        self.navigationController?.show(ScannerViewController(), sender: nil)
     }
 }
