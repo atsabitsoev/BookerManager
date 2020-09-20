@@ -16,4 +16,5 @@ protocol SettingsControlling: UIViewController {
     func workModeChanged(isWorking: Bool)
     func createDiscontAlert()
     func checkDiscountCamera()
+    func quitButtonTapped()
 }
