@@ -75,8 +75,18 @@ final class AuthService {
         }
     }
     
+    func logout() throws {
+        do {
+            try Auth.auth().signOut()
+            UserInfoService().clearAll()
+        } catch {
+            return
+        }
+    }
+    
     private func saveRestaurantId(_ id: String) {
         UserInfoService().restaurantId = id
     }
+
     
 }

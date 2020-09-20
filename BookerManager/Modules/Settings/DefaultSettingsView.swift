@@ -57,6 +57,8 @@ final class DefaultSettingsView: UIView, SettingsViewing {
         verticalStack.setCustomSpacing(44, after: switchView)
         addSubview(quitButton)
         setNeedsUpdateConstraints()
+        
+        quitButton.addTarget(self, action: #selector(quitButtonTapped), for: .touchUpInside)
     }
     
     private func initiateViews() {
@@ -107,5 +109,9 @@ final class DefaultSettingsView: UIView, SettingsViewing {
             quitButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -26),
             quitButton.heightAnchor.constraint(equalToConstant: 48)
         ])
+    }
+    
+    @objc private func quitButtonTapped() {
+        controller.quitButtonTapped()
     }
 }

@@ -49,4 +49,32 @@ final class DefaultSettingsController: UIViewController, SettingsControlling {
     func checkDiscountCamera() {
         self.navigationController?.show(ScannerViewController(), sender: nil)
     }
+    
+    func quitButtonTapped() {
+        alertQuit()
+    }
+    
+    @objc private func alertQuit() {
+        let alert = UIAlertController(title: "Выйти?", message: "Вы уверены, что хотите выйти из своего аккаунта?", preferredStyle: .actionSheet)
+        let quitAction = UIAlertAction(title: "Выйти", style: .destructive) { (_) in
+            self.quit()
+        }
+        let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
+        alert.addAction(quitAction)
+        alert.addAction(cancelAction)
+        self.tabBarController?.present(alert, animated: true, completion: nil)
+    }
+    
+    private func quit() {
+        do {
+            try AuthService().logout()
+            let authVC = DefaultEnterPhoneController()
+            let authNav = BMNavigationController(rootViewController: authVC)
+            authNav.modalPresentationStyle = .fullScreen
+            authNav.modalTransitionStyle = .flipHorizontal
+            self.tabBarController?.present(authNav, animated: true, completion: nil)
+        } catch {
+            return
+        }
+    }
 }

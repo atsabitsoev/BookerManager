@@ -18,4 +18,10 @@ final class UserInfoService {
             UserDefaults.standard.set(newValue, forKey: "restaurantId")
         }
     }
+    
+    func clearAll() {
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+    }
 }
