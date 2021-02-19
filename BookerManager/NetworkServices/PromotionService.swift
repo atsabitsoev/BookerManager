@@ -32,7 +32,9 @@ final class PromotionService {
                 if let title = promotionDict["title"] as? String,
                     let description = promotionDict["description"] as? String,
                     let image = promotionDict["image"] as? String {
-                    let promotion = Promotion(id: promotionDocument.documentID, title: title, description: description, image: image)
+                    let creationDateTS = promotionDict["creationDate"] as? Timestamp
+                    let creationDate = Date(timeIntervalSince1970: Double(creationDateTS?.seconds ?? 0))
+                    let promotion = Promotion(id: promotionDocument.documentID, title: title, description: description, image: image, creationDate: creationDate)
                     return promotion
                 } else {
                     return nil
@@ -60,7 +62,8 @@ final class PromotionService {
             let newPromotionData: [String: Any] = [
                 "title": title,
                 "description": description,
-                "image": url
+                "image": url,
+                "creationDate": Date()
             ]
             db
                 .collection("restaurants")
